@@ -1180,6 +1180,7 @@ function MacLib:Window(Settings)
 		)
 		if fetchProps then
 			for _, pt in pairs(parts) do
+				pt:Hide()
 				pt.Parent = camera
 			end
 			for propName, propValue in pairs(properties) do
