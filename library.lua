@@ -48,7 +48,7 @@ local assets = {
 --// Functions
 local function GetGui()
 	local newGui = Instance.new("ScreenGui")
-	newGui:Hide()
+	--newGui:Hide()
 	newGui.ScreenInsets = Enum.ScreenInsets.None
 	newGui.ResetOnSpawn = false
 	newGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
@@ -1180,7 +1180,7 @@ function MacLib:Window(Settings)
 		)
 		if fetchProps then
 			for _, pt in pairs(parts) do
-				pt:Hide()
+				--pt:Hide()
 				pt.Parent = camera
 			end
 			for propName, propValue in pairs(properties) do
